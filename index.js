@@ -10,8 +10,8 @@ const data = require('./lib/data')
 //app object - module scaffolding
 const app = {}
 
-data.read('test', 'newFile', (err, data) => {
-    console.log(err, data)
+data.update('test', 'newFile', {'name': 'England', "language": "English"},(err) => {
+    console.log(err)
 })
 
 
