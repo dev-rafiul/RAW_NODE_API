@@ -10,7 +10,7 @@ const data = require('./lib/data')
 //app object - module scaffolding
 const app = {}
 
-data.update('test', 'newFile', {'name': 'England', "language": "English"},(err) => {
+data.delete('test', 'newFile', (err) => {
     console.log(err)
 })
 
